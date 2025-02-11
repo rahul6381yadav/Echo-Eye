@@ -1,220 +1,303 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-*{
-    padding:0;
-    margin:0;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
-.logo{
-    font-size:2em;
-    color:#333;
+
+.logo {
+    font-size: 2em;
+    color: #333;
     text-decoration: none;
-    font-weight:600;
-    margin-right:30px;
+    font-weight: 600;
+    margin-right: 30px;
 }
+
 .header {
     overflow: hidden;
     background-color: #f1f1f1;
     padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.header-right{
-    float:right;
+
+.header-right {
+    display: flex;
 }
-a{
-    float:left;
-    text-align:center;
-    padding:12px;
-    text-decoration:none;
+
+a {
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
     font-size: 18px;
-    line-height:25px;
-    border-radius:4px;;
+    line-height: 25px;
+    border-radius: 4px;
+    margin: 0 10px;
+    color: #333;
 }
+
 .header a:hover {
     background-color: #ddd;
     color: black;
 }
-.content1{
-    background-color: gray;
-    height:400px;
 
-}
-.shayri1{
-    display:flex;
-    font-size: 70px;
-    justify-content: center;
-    align-items:center;
-    padding-top:60px;
-}
-.shayri2{
-    display:flex;
-    font-size: 30px;
-    justify-content: center;
-    align-items:center;
-    padding-top:10px;
-}
-.box1 button{
-    background-color: red;
-    color:white;
-    height:40px;
-    border:none;
-    border-radius: 4px;
-    width:160px;
-    position: relative;
-    top:10px;
-    left:400px;
-    font-size:15px;
-}
-.box2 button{
+.content1 {
     background-color: gray;
-    height:40px;
-    border:none;
-    font-size:20px;
-    position: relative;
-    bottom:30px;
-    left:700px;
+    padding: 40px 20px;
+    text-align: center;
 }
-.content2{
-    background-color:#212526;
-    color:white;
-    height:600px;
+
+.shayri1 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
-.text1{
-    font-size:50px;
-    display:flex;
-    justify-content: center;
+
+.shayri2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
-.topic1{
-    font-size:35px ;
-    padding-bottom: 10px;
+
+.box1,
+.box2 {
+    margin: 20px 0;
 }
-.topic2{
-    font-size:35px;
-    padding-bottom:10px ;
+
+.box1 button,
+.box2 button {
+    background-color: red;
+    color: white;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-.topic3{
-    font-size:35px;
-    padding-bottom:10px ;
+
+.box1 button:hover,
+.box2 button:hover {
+    background-color: darkred;
 }
-.topic4{
-    font-size:35px;
-    padding-bottom:10px ;
-}
-.box4{
-    float:right;
-    position:relative;
-    bottom:180px;
-}
-.box6{
-    float:right;
-    position:relative;
-    bottom: 220px;
-}
-.content3{
-    margin-top:10px;
-    background-color:#212526;
-    color:white;
-}
-.text2{
-    font-size:2em;
-    color:white;
-    text-decoration: none;
-    font-weight:600;
-    margin-right:30px;
-    position: relative;
-    bottom:15px;
-    right:20px;
-}
-.img2{
+
+#inputBoxContainer {
+    display: none;
     margin-top: 20px;
-    margin-left:20px;
-    height:40px;
-    width:40px;
-    position: relative;
-    top:5px;
-    left:10px;
 }
-#linkedin{
-    position:relative;
-    left:1070px;
-    bottom: 50px;
+
+#inputField {
+    height: 40px;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-#instagram{
-    position: relative;
-    left:1090px;
-    bottom:50px;
-}
-.call-us{
-    display:flex;
-    color:white;
-    border:2px solid white;
-    height: 30px;
-    width:70px; 
+
+#submitButton23 {
+    color: white;
+    background: red;
+    height: 50px;
+    width: 100px;
+    border: none;
     border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submitButton23:hover {
+    background-color: darkred;
+}
+
+.content2 {
+    background-color: #212526;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.text1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.box3,
+.box4,
+.box5,
+.box6 {
+    margin: 20px 0;
+}
+
+.box3 img,
+.box4 img,
+.box5 img,
+.box6 img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.topic1,
+.topic2,
+.topic3,
+.topic4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.content3 {
+    background-color: #212526;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.text2 {
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.img2 {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+#linkedin,
+#instagram {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.call-us {
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    bottom:88px;
-    left:1170px;
-    
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-.content4{
-    background-color:#212526;
-    color:white;
-    padding-left: 20px;
+
+.call-us:hover {
+    background-color: white;
+    color: #212526;
 }
-.heading1{
-    font-size:50px;
-    padding-bottom:40px;
-    padding-right:500px;
+
+.content4 {
+    background-color: #212526;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
 }
-.description{
-    font-size:20px;
-    padding-bottom:50px;
-    padding-right:500px;
+
+.heading1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
-.content4 button{
-    color:black;
-    background-color:skyblue;
-    border:none;
+
+.description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.content4 button {
+    color: black;
+    background-color: skyblue;
+    border: none;
     border-radius: 8px;
-    width:80px;
-    height:30px;
-    margin-bottom:50px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-.img3{
-    height:300px;
-    width:300px;
-    position:absolute;
-    left:830px;
+
+.content4 button:hover {
+    background-color: deepskyblue;
 }
-#img4{
-    position: relative;
-    bottom:320px;
-    left:120px;
+
+.img3 {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px 0;
 }
+
 footer {
     padding: 20px;
     background-color: #333;
     color: white;
-    p{
-    position: relative;
-    left:500px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
     }
 
-}
-#inputField{
-        height:40px;
-        width:400px;
-        position: absolute;
-        top:350px;
-        left:400px;
-}
-#submitButton23{
-    position: absolute;
-    top:400px;
-    right:785px;
-    color: white; 
-    background: red;  
-    height:50px;
-    width:80px;
-    border:none;
-    border-radius:8px;
+    .header-right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-right a {
+        margin: 5px 0;
+    }
+
+    .shayri1 {
+        font-size: 1.5em;
+    }
+
+    .shayri2 {
+        font-size: 1em;
+    }
+
+    .box1 button,
+    .box2 button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .text1 {
+        font-size: 2em;
+    }
+
+    .topic1,
+    .topic2,
+    .topic3,
+    .topic4 {
+        font-size: 1.2em;
+    }
+
+    .heading1 {
+        font-size: 2em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+
+    .content4 button {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .img3 {
+        width: 100%;
+        max-width: 200px;
+    }
 }
